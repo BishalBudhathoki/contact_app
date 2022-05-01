@@ -20,6 +20,22 @@
   background-color: #343a40;
 
 }
+#box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+/*#company {*/
+/*    text-transform: uppercase;*/
+/*}*/
+#profile {
+    margin-left: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
  .contactNameHeading{
   color: #b6e1e0;
 }
@@ -45,7 +61,7 @@
 }
 .mb-2 {
   /*padding-left: 50px;*/
-  background-color: #2b4353;
+  background-color: #2772db;
   margin-left: 30.5%;
   position: center;
   width: 33em;
@@ -58,7 +74,7 @@
   box-shadow: 10px 10px 20px rgba(243, 28, 28, 0.2);
  }
 .css-hz1bth-MuiDialog-container {
-  background-color: gainsboro;
+  background-color: #febe7e;
 
 }
 

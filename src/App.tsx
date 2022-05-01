@@ -11,12 +11,17 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import * as Icon from 'react-bootstrap-icons';
+import profileImg from './user.png';
+
 
 type Address = {
     street: string;
     suite: string;
     city: string;
     zipcode: string;
+}
+type Company = {
+    bs: string;
 }
 type Contact = {
     name: string;
@@ -25,7 +30,7 @@ type Contact = {
     phone: string;
     address: Address;
     website: string;
-
+    company: Company;
 }
 
 
@@ -89,6 +94,15 @@ export default function App() {
         )
     }
 
+    const FooterPage = () => {
+        return (
+            <div>
+                &copy; {new Date().getFullYear()} Portfolio:
+                <a href="https://www.bishalbudhathoki.me"
+                   style={{color: "greenyellow"}}> BishalBudhathoki.me </a>
+            </div>
+        )};
+
 
 
     return (
@@ -106,7 +120,7 @@ export default function App() {
           {/*</a>*/}
 
           { getContactCards()}
-
+          { FooterPage() }
           <Dialog
               BackdropProps={{ invisible: true }}
               className="dialogBox"
@@ -116,24 +130,25 @@ export default function App() {
               aria-describedby="alert-dialog-description"
               PaperProps={{
                   style: {
-                      backgroundColor: "#fff800",
+                      backgroundColor: "#ff9a3c",
                   },
               }}
           >
               <DialogTitle id="alert-dialog-title" >
-                  <b><u>{selectedContact?.name}</u></b>
+                  <img id="profile" src={profileImg} alt="Profile" width="120" height="120"/>
+                  <p style={{color: "#155263", marginLeft: "90px"}}><b><u>{selectedContact?.name}</u></b></p>
 
               </DialogTitle>
               <DialogContent>
                   <DialogContentText id="alert-dialog-description">
 
-                      <div className="contacts">
-                          <p><b>Name:</b> {selectedContact?.name} </p>
-                          <p><b>Email:</b> {selectedContact?.email}</p>
-                          <p><b>Phone:</b> {selectedContact?.phone}</p>
-                          <p><b>Address:</b> {`${selectedContact?.address.street}, ${selectedContact?.address.zipcode}`}</p>
-                          <p><b>Website:</b> <a href={selectedContact?.website}> {selectedContact?.website}</a></p>
-
+                      <div className="contacts" style={{color: "#bc2525"}}>
+                          <div><p ><b>Name:</b> {selectedContact?.name} </p></div>
+                          <div><p><b>Email:</b> <a href="mailto:{selectedContact?.email} " style={{color: "#bc2525"}}> {selectedContact?.email}</a></p></div>
+                          <div><p><b>Phone:</b> <a href="tel:{selectedContact?.phone}" style={{color: "#bc2525"}}>{selectedContact?.phone}</a></p></div>
+                          <div><p><b>Address:</b> {`${selectedContact?.address.street}, ${selectedContact?.address.suite}, ${selectedContact?.address.zipcode}`}</p></div>
+                          <div><p><b>Website:</b> <a href={selectedContact?.website} style={{color: "#bc2525"}}> {selectedContact?.website}</a></p></div>
+                          {/*<div id="box"><p style={{display: "inline"}}><b>Company:</b><p id="company"> {selectedContact?.company.bs} </p></p></div>*/}
                       </div>
                   </DialogContentText>
               </DialogContent>
