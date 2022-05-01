@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+  font-size: 1em;
+  background: #e8630a;
+  /*background-color: cadetblue;*/
+  /*background: #41295a;  !* fallback for old browsers *!*/
+  /*background: -webkit-linear-gradient(to right, #2F0743, #41295a);  !* Chrome 10-25, Safari 5.1-6 *!*/
+  /*background: linear-gradient(to right, #2F0743, #41295a); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+}
+
+.position-relative {
+  height: 10px;
+  width: 100%;
+  padding-right: 100px;
+  position: relative;
+}
+.position-relative-example div {
+  width: 2em;
+  height: 1em;
+  background-color: #343a40;
+
+}
+ .contactNameHeading{
+  color: #b6e1e0;
+}
+
+.mb-2 .card-header {
+  /*display: block;*/
+  /*padding-left: 500px;*/
+  /*position: center;*/
+  background-color: #2b4353;
+
+  /*display: block;*/
+
+  /*margin: 60px auto;*/
+  /*box-shadow: 10px 5px 40px 20px;*/
+  /*transition: .25s;*/
+}
+
+.mb-2 .start-100 {
+  left: 85%!important;
+}
+.mb-2 .top-50 {
+  top: 40%!important;
+}
+.mb-2 {
+  /*padding-left: 50px;*/
+  background-color: #2b4353;
+  margin-left: 30.5%;
+  position: center;
+  width: 33em;
+  font-size: 1em;
+  text-align: center;
+
+}
+.App .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  background-color: #fff800;
+  box-shadow: 10px 10px 20px rgba(243, 28, 28, 0.2);
+ }
+.css-hz1bth-MuiDialog-container {
+  background-color: gainsboro;
+
+}
+
+.box {
+  margin-top: 500px;
+  margin-left: 500px;
+}
+.mb-2 p {
+  font-weight: normal;
+  font-size: 1em;
+  text-align: left;
+}
+.App  p {
+  font-size: 2em;
+}
+ .Heading {
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  color: azure;
+  font-size: 1.5em;
+}
+
+.animate-charcter
+{
+  text-transform: uppercase;
+  background-image: linear-gradient(
+          -225deg,
+          #231557 0%,
+          #44107a 29%,
+          #ff1361 67%,
+          #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+    text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
