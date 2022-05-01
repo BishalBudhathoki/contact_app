@@ -1,0 +1,8 @@
+{
+  "name": "Contact Application",
+  "description": "A barebones Node.js app using Express",
+  "repository": "https://github.com/BishalBudhathoki/contact_app",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["npm", "react", "static"]
+
+}
