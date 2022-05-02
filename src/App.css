@@ -2,7 +2,9 @@
   text-align: center;
   font-size: 1em;
   background: #e8630a;
-max-height: max-content;
+  height: 100%;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 .position-relative {
@@ -11,12 +13,14 @@ max-height: max-content;
   padding-right: 100px;
   position: relative;
 }
+
 .position-relative-example div {
   width: 2em;
   height: 1em;
   background-color: #343a40;
 
 }
+
 #box {
     display: flex;
     flex-flow: row nowrap;
@@ -24,13 +28,12 @@ max-height: max-content;
     align-content: center;
     align-items: center;
 }
+
 .dialogBox {
     margin-left:950px;
     margin-top: 100px;
 }
-/*#company {*/
-/*    text-transform: uppercase;*/
-/*}*/
+
 #profile {
     margin-left: 25%;
     /*margin-right: 50%;*/
@@ -38,62 +41,53 @@ max-height: max-content;
     justify-content: center;
     align-items: center;
 }
+
  .contactNameHeading{
   color: #b6e1e0;
 }
 
 .mb-2 .card-header {
-  /*display: block;*/
-  /*padding-left: 500px;*/
-  /*position: center;*/
   background-color: #2b4353;
-
-  /*display: block;*/
-
-  /*margin: 60px auto;*/
-  /*box-shadow: 10px 5px 40px 20px;*/
-  /*transition: .25s;*/
 }
 
 .mb-2 .start-100 {
   left: 85%!important;
 }
+
 .mb-2 .top-50 {
   top: 40%!important;
 }
 
 .mb-2 {
-  /*padding-left: 50px;*/
-    margin-bottom: 50px;
   background-color: #2772db;
-  margin-left: 30.5%;
+  margin-left: 30.5vw;
   position: center;
   width: 33em;
   font-size: 1em;
   text-align: center;
-
 }
+
 .App .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
   background-color: #fff800;
   box-shadow: 10px 10px 20px rgba(243, 28, 28, 0.2);
  }
+
 .box {
   margin-top: 500px;
   margin-left: 500px;
 }
 
-/*.css-hz1bth-MuiDialog-container {*/
-/*    background-color: #febe7e;*/
-/*    width: 200%*/
-/*}*/
 .mb-2 p {
   font-weight: normal;
   font-size: 1em;
   text-align: left;
 }
-.App  p {
-  font-size: 2em;
+
+.App  .container {
+  position: center;
+    font-size: 1em;
 }
+
  .Heading {
   background: rgb(238,174,202);
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
@@ -120,7 +114,8 @@ max-height: max-content;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-  font-size: 190px;
+  font-size: 2em;
+  position: center;
 }
 
 @keyframes textclip {
