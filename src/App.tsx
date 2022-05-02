@@ -164,26 +164,26 @@ export default function App() {
           >
               <DialogTitle id="alert-dialog-title" >
                   <img id="profile" src={profileImg} alt="Profile" width="120" height="120"/>
-                  <p style={{color: "#155263", marginLeft: "90px"}}><b><u>{selectedContact?.name}</u></b></p>
+                  <p style={{color: "#155263", marginLeft: "18%", marginRight: "2%"}}><b><u>{selectedContact?.name}</u></b></p>
 
               </DialogTitle>
               <DialogContent>
                   <DialogContentText id="alert-dialog-description">
 
                       <div className="contacts" style={{color: "#bc2525"}}>
-                          <div><p ><b>Name:</b> {selectedContact?.name} </p></div>
-                          <div><p><b>Email:</b>
+                          <div><p ><b>Name: </b> {selectedContact?.name} </p></div>
+                          <div><p><b>Email: </b>
                               <a href="mailto:{selectedContact?.email} " style={{color: "#bc2525"}}>
                                   {selectedContact?.email}
                               </a>
                           </p></div>
-                          <div><p><b>Phone:</b>
+                          <div><p><b>Phone: </b>
                               <a href="tel:{selectedContact?.phone}" style={{color: "#bc2525"}}>
                                   {selectedContact?.phone}</a>
                           </p></div>
-                          <div><p><b>Address:</b> {`${selectedContact?.address.street}, 
-                          ${selectedContact?.address.suite}, ${selectedContact?.address.zipcode}`}</p></div>
-                          <div><p><b>Website:</b>
+                          <div><p><b>Address: </b> {`${selectedContact?.address.street}, 
+                          ${selectedContact?.address.suite},`} <br/> {`${selectedContact?.address.zipcode}`}</p></div>
+                          <div><p><b>Website: </b>
                               <a href= {selectedContact?.website} target="_blank" rel="noreferrer" style={{color: "#bc2525"}}>
                                 {selectedContact?.website}
                               </a>

@@ -31,7 +31,8 @@
 /*    text-transform: uppercase;*/
 /*}*/
 #profile {
-    margin-left: 95px;
+    margin-left: 25%;
+    /*margin-right: 50%;*/
     display: flex;
     justify-content: center;
     align-items: center;
