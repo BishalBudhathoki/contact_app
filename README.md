@@ -1,6 +1,34 @@
-# Getting Started with Create React App
+# Question
+**Write a responsive “Contacts” application that allows the user to browse their contacts:**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+•	**Make use of https://jsonplaceholder.typicode.com/ (/users are the contacts).**
+
+•	**Use either VueJS, Angular or React.**
+
+•	**Make it visually appealing.**
+
+•	**No need to implement Create/Update/Delete.**
+
+•	**Provide instructions on how to run the code.**
+
+# Solution
+Solution is deployed using netlify and is available [here](https://incredible-kleicha-0c7356.netlify.app/).
+This react application is react, html, css, mui bootstrap.
+
+## UI
+
+![image](https://user-images.githubusercontent.com/35174206/166234557-a438250b-968f-43b4-bc71-45c5414d2d41.png)
+
+![image](https://user-images.githubusercontent.com/35174206/166234678-0a950fbf-acfb-45cf-8a84-1f6cd27308c3.png)
+
+![image](https://user-images.githubusercontent.com/35174206/166234738-78a32f35-9a14-4127-a994-47f0e248e626.png) &emsp; &emsp; &emsp; ![image](https://user-images.githubusercontent.com/35174206/166234883-2484f37e-7e79-4b1c-9ab2-e399875dfff5.png)
+
+## Instructions to run the code:
+To run this react application:
+1. Clone the app from this repo [here](https://github.com/BishalBudhathoki/contact_app). (git clone repoURL).
+2. Change the directory to the repo (cd directoryPath).
+3. Install requirements using npm install.
+   More available scripts are below.
 
 ## Available Scripts
 
