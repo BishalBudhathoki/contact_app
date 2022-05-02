@@ -2,10 +2,7 @@
   text-align: center;
   font-size: 1em;
   background: #e8630a;
-  /*background-color: cadetblue;*/
-  /*background: #41295a;  !* fallback for old browsers *!*/
-  /*background: -webkit-linear-gradient(to right, #2F0743, #41295a);  !* Chrome 10-25, Safari 5.1-6 *!*/
-  /*background: linear-gradient(to right, #2F0743, #41295a); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+max-height: max-content;
 }
 
 .position-relative {
@@ -26,6 +23,10 @@
     justify-content: center;
     align-content: center;
     align-items: center;
+}
+.dialogBox {
+    margin-left:950px;
+    margin-top: 100px;
 }
 /*#company {*/
 /*    text-transform: uppercase;*/
@@ -60,8 +61,10 @@
 .mb-2 .top-50 {
   top: 40%!important;
 }
+
 .mb-2 {
   /*padding-left: 50px;*/
+    margin-bottom: 50px;
   background-color: #2772db;
   margin-left: 30.5%;
   position: center;
@@ -74,15 +77,15 @@
   background-color: #fff800;
   box-shadow: 10px 10px 20px rgba(243, 28, 28, 0.2);
  }
-.css-hz1bth-MuiDialog-container {
-  background-color: #febe7e;
-
-}
-
 .box {
   margin-top: 500px;
   margin-left: 500px;
 }
+
+/*.css-hz1bth-MuiDialog-container {*/
+/*    background-color: #febe7e;*/
+/*    width: 200%*/
+/*}*/
 .mb-2 p {
   font-weight: normal;
   font-size: 1em;

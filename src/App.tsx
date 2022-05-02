@@ -103,18 +103,19 @@ export default function App() {
       return contacts.map((contact: Contact, index) => {
           console.log(contact)
           return(
-              <Card className="mb-2">
-                 <Card.Header >
-                     <h3 className="contactNameHeading">{contact.name}
-                         <div >
-                             <div className="position-absolute top-50 start-100 translate-middle">
-                                 <Icon.InfoCircleFill size={25} onClick={()=>handleClickOpen(contact)}/>
-                             </div>
-                         </div>
-                     </h3>
-                       {/*<Button onClick={()=>handleClickOpen(contact)}>More</Button>*/}
-                 </Card.Header>
+              <><Card className="mb-2">
+                  <Card.Header>
+                      <h3 className="contactNameHeading">{contact.name}
+                          <div>
+                              <div className="position-absolute top-50 start-100 translate-middle">
+                                  <Icon.InfoCircleFill size={25} onClick={() => handleClickOpen(contact)}/>
+                              </div>
+                          </div>
+                      </h3>
+                      {/*<Button onClick={()=>handleClickOpen(contact)}>More</Button>*/}
+                  </Card.Header>
               </Card>
+              </>
           )
       })
    }
@@ -146,6 +147,7 @@ export default function App() {
 
            {/*Calling the getContactCards() and FooterPage() function. */}
           { getContactCards()}
+          <br/>
           { FooterPage() }
 
            {/*This is a dialog box that is used to display the contact information. */}
