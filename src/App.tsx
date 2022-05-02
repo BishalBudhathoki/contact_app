@@ -125,7 +125,7 @@ export default function App() {
             <div>
                 &copy; {new Date().getFullYear()} Portfolio:
                 <a href="https://www.bishalbudhathoki.me" target="_blank"
-                   style={{color: "greenyellow"}}> BishalBudhathoki.me </a>
+                   style={{color: "greenyellow"}} rel="noreferrer"> BishalBudhathoki.me </a>
             </div>
         )
     };
@@ -184,7 +184,7 @@ export default function App() {
                           <div><p><b>Address:</b> {`${selectedContact?.address.street}, 
                           ${selectedContact?.address.suite}, ${selectedContact?.address.zipcode}`}</p></div>
                           <div><p><b>Website:</b>
-                              <a href= {selectedContact?.website} target="_blank" style={{color: "#bc2525"}}>
+                              <a href= {selectedContact?.website} target="_blank" rel="noreferrer" style={{color: "#bc2525"}}>
                                 {selectedContact?.website}
                               </a>
                           </p></div>

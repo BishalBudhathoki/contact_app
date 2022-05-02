@@ -3,6 +3,11 @@
   "description": "A barebones Node.js app using Express",
   "repository": "https://github.com/BishalBudhathoki/contact_app",
   "logo": "https://node-js-sample.herokuapp.com/node.png",
-  "keywords": ["npm", "react", "static"]
+  "keywords": ["npm", "react", "static"],
+  "buildpacks": [
+    {
+      "url": "mars/create-react-app"
+    }
+  ]
 
 }
