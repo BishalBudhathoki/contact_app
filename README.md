@@ -12,7 +12,7 @@
 •	**Provide instructions on how to run the code.**
 
 # Solution
-Solution is deployed using netlify and is available [here](https://incredible-kleicha-0c7356.netlify.app/).
+Solution is deployed using netlify and is available :point_right: [here](https://incredible-kleicha-0c7356.netlify.app/) :point_left:.
 This react application is react, html, css, mui bootstrap.
 
 ## UI
